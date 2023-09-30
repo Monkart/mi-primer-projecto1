@@ -1,13 +1,9 @@
-Diccionario = {"XD":"es una forma de expresar algo grasioso",
-    "bro":"es una forma la cual se expresan entre amigos ",
-    "lol":"es una forma de expresar algo grasioso pero casi siempre lo ocupan los de America",
-    "papu":"es una manera de llamar a una persona de parte de la grasa xd",
-    "mamu":"es la contra parte de papu osea en femenino"
-}
-
-x = input("Que palabra te gustaria conocer?:")
-
-if x in meme_dict.keys():
-    print(meme_dict[x])
-else:
-    print("eso que no lo tenemos xd")
+diccionario = {"AFK":"Provienen del termino: away from keyboard. Que significa: Lejos del teclado. Se usa para avisar cuando un jugador no está presente pero su avatar si." , 
+                "Banear":"Es una españolización del termino en ingles: To ban (vetar o excluir) Significa bloquear el acceso generalmente a un servidor online",
+                "Funar": "Accón de denunciar públicamente a alguien, generalmente por internet, tras haber hecho un acto reprochable"}
+while True:
+    palabra = input("¿Cuál palabra quisieras escoger?")
+    if palabra in diccionario.keys():
+        print(diccionario[palabra])
+    else:
+        print("No tenemos esa palabra aún, estamos en proceso")
